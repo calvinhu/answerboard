@@ -1,8 +1,7 @@
 from flask import render_template, flash, redirect, url_for, request, render_template_string
-from flask_user import current_user, login_required, roles_required, UserManager, UserMixin
-from flask_babelex import Babel
+from flask import current_app as app
+from flask_user import current_user, login_required, roles_required
 from werkzeug.urls import url_parse
-from app import app, db
 from app.forms import LoginForm, RegistrationForm
 from app.models import User
 
